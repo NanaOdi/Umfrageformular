@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Umfrageformular Allweterzoo Münster</title>
+    <!--<img src="bilder/tiere.avif" alt="Zo tiere">-->
+    <!--Überschrifte-->
+    <div class="titel">
+        <h1 class="us1">Allwetterzoo</h1>
+        <hr>
+        <h2 class="ub2">Erlebniswelt für Ganze Familie</h2>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <!---->
+        <form id="uf" method="GET">
+            <div class="lab">
+                <label for="name" id="name-lab">*Vor Name</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" id="name" class="input-feld" placeholder="Geben Sie ihre Name ein" required autofocus>
+            </div>
+            <div class="lab">
+                <label for="nachname" id="name-lab">*Nachname</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" id="nachname" class="input-feld" placeholder="Geben Sie ihre Nachname ein" required autofocus>
+            
+            <div class="lab">
+                <label id="email-lab" for="email">*email</label>
+            <div class="input">
+                <input class="input-feld" type="email" name="email" id="email" placeholder="email@yahoo.de" required>
+            </div>
+            <div class="lab">
+                <label for="zahlen" id="zahlen-lab">*Alter</label>
+            </div>
+            <div class="input">
+                <input type="number" class="input-feld" id="number" name="number" min="1" max="120" placeholder="15" required>
+            </div>
+            <div class="lab">
+                <label for="drop">Wie haben Sie Allwetter Zoo Münster gefunden?</label>
+                <div class="input">
+                    <select name="site" id="dropdown">
+                        <option disabled value selected>Wählen aus</option>
+                        <option value="int">Internet</option>
+                        <option value="tv">Fehrnseher</option>
+                        <option value="Reisefurer">Reisefurer</option>
+                        <option value="andere">Was Anderes</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="lab">
+                <label>Wie gut hat es Ihnen Allwetterzoo Münster gefahlen?</label>
+            </div> 
+            <div class="input">
+                <input type="radio" name="radio-button" value="sehrgut">Sehr Gut wir kommen wieder! <br>
+                <input type="radio" name="radio-button" value="gut">Gut <br>
+                <input type="radio" name="radio-button" value="getso">Geht so <br>
+                <input type="radio" name="radio-button" value="garnicht">Gar Nicht <br>
+            </div>    
+            <div class="lab">
+                <label for="drop">Wie oft waren Sie Schon in Münster Zoo?</label>
+            </div>   
+            <div class="input">
+                <select name="sesons" id="dropdown">
+                    <option disabled value selected>Auswählen</option>
+                    <option value="Jahreskarte">Zimlich Oft Jahreskarte</option>
+                    <option value="alle-drei-monaten">Alle drei Monaten</option>
+                    <option value="Jederwoche">Jeder Woche</option>
+                    <option value="abundzu">Ab und Zu</option>
+                </select>
+            </div>  
+            <div class="lab">
+                <label>Mit wem mögen sie den Zoo Besuchen? <br> (Mehrere Auswählen möglich)</label>
+            </div>  
+            <div class="input">
+                <input type="checkbox" name="Mf" value="mf">Mit der Familie<br>
+                <input type="checkbox" name="fr" value="fr">Mit Freunden<br>
+                <input type="checkbox" name="allein" value="allein">Allein<br>
+                <input type="checkbox" name="ge" value="ge">Mit Grosseltern<br>
+                <input type="checkbox" name="anders" value="anders">Anderes<br>
+            </div>
+            <div class="lab">
+                <label for="kommentar">
+                    Wie/wo können wir uns verbessern?
+                </label>
+            </div>
+            <div class="input">
+                <textarea class="input-feld" name="kommentar" id="kommentar" cols="40" rows="10" placeholder="eure kommentar"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit" id="submit">Senden</button>
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div>
+        <p>Erstellt 2024 Nana Odishelidze</p>
+    </div>
+</footer>
+</html>
